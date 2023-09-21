@@ -17,6 +17,11 @@ public class ItemController {
         Item item = itemService.getItemById(id);
         return ResponseEntity.ok(item);
     }
+    @GetMapping("/items")
+    public ResponseEntity<Iterable<Item>> getAllItems() {
+        Iterable<Item> items = itemService.getAllItems();
+        return ResponseEntity.ok(items);
+    }
 
     @PostMapping
     public ResponseEntity<Item> createItem(@RequestBody Item item) {

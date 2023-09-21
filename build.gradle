@@ -29,6 +29,7 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.22'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
 
+    runtimeOnly 'com.h2database:h2'
     implementation 'com.h2database:h2'
 
 }
